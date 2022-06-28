@@ -57,13 +57,6 @@ export const productImage = [
     type: "Hoodies",
   },
   {
-    id: 6,
-    url: "https://images.unsplash.com/photo-1554230170-977a7022267e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    name: "Long-Sleeve Cardigan",
-    price: 21,
-    type: "Cardigans",
-  },
-  {
     id: 7,
     url: "https://images.unsplash.com/photo-1614975059251-992f11792b9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     name: "Graphic Sweatshirt",
@@ -102,9 +95,5 @@ export const Types = [
   {
     type: "Hoodies",
     id: 4,
-  },
-  {
-    type: "Cardigans",
-    id: 5,
   },
 ];
