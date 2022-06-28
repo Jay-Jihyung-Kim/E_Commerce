@@ -88,9 +88,9 @@ const HiddenContainer = styled.div`
   height: 100vh;
   width: 100%;
   max-width: ${(props) => props.width};
-  position: fixed;
+  position: absolute;
   width: 100%;
-  z-index: 10;
+  z-index: 10000;
   overflow: hidden;
   transition: max-width 0.3s;
   overflow: scroll;
@@ -267,6 +267,7 @@ const NavbarMobile = () => {
           onClick={closeSearch}
         />
       </InputContainer>
+
       <HiddenContainer width={navwidth} onClick={closeSearch}>
         <Signup>
           <Link to="/login">Sign in </Link> or <Link to="">Register!</Link>
@@ -277,9 +278,9 @@ const NavbarMobile = () => {
             <ExpandMoreIcon style={{ fontSize: "1.8rem", margin: "0" }} />
           </Title>
           <CategoryNew category={category}>
-            <a href="">NEW SEASONAL</a>
-            <a href="">SPRING 2022</a>
-            <a href="">JUST ARRIVED</a>
+            <a href="/products">NEW SEASONAL</a>
+            <a href="/products">SPRING 2022</a>
+            <a href="/products">JUST ARRIVED</a>
           </CategoryNew>
         </Category>
         <Category>
@@ -288,12 +289,12 @@ const NavbarMobile = () => {
             <ExpandMoreIcon style={{ fontSize: "1.8rem", margin: "0" }} />
           </Title>
           <CategoryWomen category={category}>
-            <a href="">NEW WOMEN</a>
-            <a href="">NEW TOPS</a>
-            <a href="">NEW DRESSES</a>
-            <a href="">NEW BOTTOMS</a>
-            <a href="">NEW SHOES</a>
-            <a href="">NEW ACCESSORIES</a>
+            <a href="/products">NEW WOMEN</a>
+            <a href="/products">NEW TOPS</a>
+            <a href="/products">NEW DRESSES</a>
+            <a href="/products">NEW BOTTOMS</a>
+            <a href="/products">NEW SHOES</a>
+            <a href="/products">NEW ACCESSORIES</a>
           </CategoryWomen>
         </Category>
         <Category>
@@ -302,11 +303,11 @@ const NavbarMobile = () => {
             <ExpandMoreIcon style={{ fontSize: "1.8rem", margin: "0" }} />
           </Title>
           <CategoryMen category={category}>
-            <a href="">NEW MEN</a>
-            <a href="">NEW SHIRTS</a>
-            <a href="">NEW PANTS</a>
-            <a href="">NEW SHOES</a>
-            <a href="">NEW ACCESORIES</a>
+            <a href="/products">NEW MEN</a>
+            <a href="/products">NEW SHIRTS</a>
+            <a href="/products">NEW PANTS</a>
+            <a href="/products">NEW SHOES</a>
+            <a href="/products">NEW ACCESORIES</a>
           </CategoryMen>
         </Category>
         <Category>
@@ -315,11 +316,11 @@ const NavbarMobile = () => {
             <ExpandMoreIcon style={{ fontSize: "1.8rem", margin: "0" }} />
           </Title>
           <CategoryKid category={category}>
-            <a href="">NEW KIDS</a>
-            <a href="">NEW SHIRTS</a>
-            <a href="">NEW PANTS</a>
-            <a href="">NEW SHOES</a>
-            <a href="">NEW ACCESORIES</a>
+            <a href="/products">NEW KIDS</a>
+            <a href="/products">NEW SHIRTS</a>
+            <a href="/products">NEW PANTS</a>
+            <a href="/products">NEW SHOES</a>
+            <a href="/products">NEW ACCESORIES</a>
           </CategoryKid>
         </Category>
         <HelpNavigationMobile />
